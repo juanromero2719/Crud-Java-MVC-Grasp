@@ -1,0 +1,1085 @@
+2024-08-27 15:43:43.390845-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+SELECT * FROM Prueba.Pais WHERE id = ? [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1739)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorios.PaisRepositorio.Buscar(PaisRepositorio.java:74)
+	at com.mycompany.ejercicio1.Ejercicio1.insertar_datos_basededatos(Ejercicio1.java:118)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:145)
+2024-08-27 15:43:43.419748-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+SELECT * FROM Prueba.Pais WHERE id = ? [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1739)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorios.PaisRepositorio.Buscar(PaisRepositorio.java:74)
+	at com.mycompany.ejercicio1.Ejercicio1.insertar_datos_basededatos(Ejercicio1.java:119)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:145)
+2024-08-27 15:43:43.440799-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+SELECT d.id, d.nombre, d.pais_id, p.nombre as pais_nombre FROM Prueba.Departamento d JOIN Prueba.Pais p ON d.pais_id = p.id WHERE d.id = ? [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1739)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorios.DepartamentoRepositorio.Buscar(DepartamentoRepositorio.java:66)
+	at com.mycompany.ejercicio1.Ejercicio1.insertar_datos_basededatos(Ejercicio1.java:120)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:145)
+2024-08-27 15:43:43.471591-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+SELECT m.id AS municipio_id, m.nombre AS municipio_nombre, d.id AS departamento_id, d.nombre AS departamento_nombre, p.id AS pais_id, p.nombre AS pais_nombre FROM Prueba.Municipio m JOIN Prueba.Departamento d ON m.departamento_id = d.id JOIN Prueba.Pais p ON d.pais_id = p.id WHERE m.id = ? [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1739)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorios.MunicipioRepositorio.Buscar(MunicipioRepositorio.java:71)
+	at com.mycompany.ejercicio1.Ejercicio1.insertar_datos_basededatos(Ejercicio1.java:121)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:145)
+2024-08-27 15:43:43.494788-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+SELECT d.id AS direccion_id, d.calle, d.carrera, d.coordenada, d.descripcion, m.id AS municipio_id, m.nombre AS municipio_nombre, dp.id AS departamento_id, dp.nombre AS departamento_nombre, p.id AS pais_id, p.nombre AS pais_nombre FROM Prueba.DIRECCION d JOIN Prueba.MUNICIPIO m ON d.municipio_id = m.id JOIN Prueba.DEPARTAMENTO dp ON m.departamento_id = dp.id JOIN Prueba.PAIS p ON dp.pais_id = p.id WHERE d.id = ? [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1739)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorios.DireccionRepositorio.Buscar(DireccionRepositorio.java:72)
+	at com.mycompany.ejercicio1.Ejercicio1.insertar_datos_basededatos(Ejercicio1.java:122)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:145)
+2024-08-27 15:43:43.512828-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+SELECT p.id AS persona_id, p.nombres, p.apellidos, p.direccion_id FROM Prueba.PERSONA p WHERE p.id = ? [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1739)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorios.PersonaRepositorio.Buscar(PersonaRepositorio.java:57)
+	at com.mycompany.ejercicio1.Ejercicio1.insertar_datos_basededatos(Ejercicio1.java:123)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:145)
+2024-08-27 15:43:43.549737-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+SELECT id, nombre FROM Prueba.Cargo WHERE id = ? [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1739)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorios.CargoRepositorio.Buscar(CargoRepositorio.java:63)
+	at com.mycompany.ejercicio1.Ejercicio1.insertar_datos_basededatos(Ejercicio1.java:124)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:145)
+2024-08-27 15:43:43.570777-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+SELECT e.id, e.codigo, e.programa, e.promedio, p.id AS persona_id, p.nombres, p.apellidos, p.direccion_id FROM Prueba.Estudiante e JOIN Prueba.Persona p ON e.persona_id = p.id WHERE e.id = ? [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1739)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorios.EstudianteRepositorio.Buscar(EstudianteRepositorio.java:65)
+	at com.mycompany.ejercicio1.Ejercicio1.insertar_datos_basededatos(Ejercicio1.java:125)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:145)
+2024-08-27 15:43:43.586340-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+SELECT e.id AS empleado_id, e.salario, e.cargo_id, e.persona_id, p.id AS persona_id, p.nombres, p.apellidos, p.direccion_id, c.nombre AS cargo_nombre FROM Prueba.EMPLEADO e JOIN Prueba.PERSONA p ON e.persona_id = p.id JOIN Prueba.CARGO c ON e.cargo_id = c.id WHERE e.id = ? [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1739)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorios.EmpleadoRepositorio.Buscar(EmpleadoRepositorio.java:67)
+	at com.mycompany.ejercicio1.Ejercicio1.insertar_datos_basededatos(Ejercicio1.java:126)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:145)
+2024-08-27 15:43:55.540367-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE SCHEMA [*]IF EXISTS Prueba"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE SCHEMA [*]IF EXISTS Prueba"; expected "identifier"; SQL statement:
+CREATE SCHEMA IF EXISTS Prueba [42001-232]
+2024-08-27 15:43:55.542369-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+CREATE TABLE Prueba.PAIS(
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255)
+) [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getSchema(Parser.java:923)
+	at org.h2.command.Parser.getSchema(Parser.java:929)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8808)
+	at org.h2.command.Parser.parseCreate(Parser.java:6398)
+	at org.h2.command.Parser.parsePrepared(Parser.java:645)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-27 15:43:55.543368-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+CREATE TABLE Prueba.DEPARTAMENTO (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255),
+    pais_id INT,
+    CONSTRAINT fk_pais FOREIGN KEY (pais_id) REFERENCES Prueba.PAIS(id) ON DELETE CASCADE
+) [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getSchema(Parser.java:923)
+	at org.h2.command.Parser.getSchema(Parser.java:929)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8808)
+	at org.h2.command.Parser.parseCreate(Parser.java:6398)
+	at org.h2.command.Parser.parsePrepared(Parser.java:645)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-27 15:43:55.544368-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+CREATE TABLE Prueba.MUNICIPIO (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255),
+    departamento_id INT,
+    CONSTRAINT fk_departamento FOREIGN KEY (departamento_id) REFERENCES Prueba.DEPARTAMENTO(id) ON DELETE CASCADE
+) [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getSchema(Parser.java:923)
+	at org.h2.command.Parser.getSchema(Parser.java:929)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8808)
+	at org.h2.command.Parser.parseCreate(Parser.java:6398)
+	at org.h2.command.Parser.parsePrepared(Parser.java:645)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-27 15:43:55.545372-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+CREATE TABLE Prueba.DIRECCION (
+    id INT PRIMARY KEY,
+    municipio_id INT,
+    departamento_id INT,
+    pais_id INT,
+    calle VARCHAR(255),
+    carrera VARCHAR(255),
+    coordenada VARCHAR(255),
+    descripcion TEXT,
+    CONSTRAINT fk_municipio_direccion FOREIGN KEY (municipio_id) REFERENCES Prueba.MUNICIPIO(id) ON DELETE CASCADE,
+    CONSTRAINT fk_departamento_direccion FOREIGN KEY (departamento_id) REFERENCES Prueba.DEPARTAMENTO(id) ON DELETE CASCADE,
+    CONSTRAINT fk_pais_direccion FOREIGN KEY (pais_id) REFERENCES Prueba.PAIS(id) ON DELETE CASCADE
+) [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getSchema(Parser.java:923)
+	at org.h2.command.Parser.getSchema(Parser.java:929)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8808)
+	at org.h2.command.Parser.parseCreate(Parser.java:6398)
+	at org.h2.command.Parser.parsePrepared(Parser.java:645)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-27 15:43:55.546373-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+CREATE TABLE Prueba.PERSONA (
+    id INT PRIMARY KEY,
+    nombres VARCHAR(255) NOT NULL,
+    apellidos VARCHAR(255) NOT NULL,
+    direccion_id INT,
+    FOREIGN KEY (direccion_id) REFERENCES Prueba.DIRECCION(id) ON DELETE CASCADE
+) [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getSchema(Parser.java:923)
+	at org.h2.command.Parser.getSchema(Parser.java:929)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8808)
+	at org.h2.command.Parser.parseCreate(Parser.java:6398)
+	at org.h2.command.Parser.parsePrepared(Parser.java:645)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-27 15:43:55.546373-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+CREATE TABLE Prueba.EMPLEADO (
+    id INT PRIMARY KEY,
+    salario DOUBLE,
+    cargo_id INT,
+    persona_id INT,
+    FOREIGN KEY (persona_id) REFERENCES Prueba.PERSONA(id) ON DELETE CASCADE,
+    FOREIGN KEY (cargo_id) REFERENCES Prueba.CARGO(id)
+) [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getSchema(Parser.java:923)
+	at org.h2.command.Parser.getSchema(Parser.java:929)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8808)
+	at org.h2.command.Parser.parseCreate(Parser.java:6398)
+	at org.h2.command.Parser.parsePrepared(Parser.java:645)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-27 15:43:55.547429-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+CREATE TABLE Prueba.Estudiante (
+    id INT PRIMARY KEY,
+    codigo VARCHAR(20) UNIQUE,
+    programa VARCHAR(100),
+    promedio DOUBLE,
+    persona_id INT,
+    FOREIGN KEY (persona_id) REFERENCES Prueba.PERSONA(id) ON DELETE CASCADE
+) [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getSchema(Parser.java:923)
+	at org.h2.command.Parser.getSchema(Parser.java:929)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8808)
+	at org.h2.command.Parser.parseCreate(Parser.java:6398)
+	at org.h2.command.Parser.parsePrepared(Parser.java:645)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-27 15:43:55.548429-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRUEBA" no encontrado
+Schema "PRUEBA" not found; SQL statement:
+CREATE TABLE Prueba.CARGO (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL  
+) [90079-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getSchema(Parser.java:923)
+	at org.h2.command.Parser.getSchema(Parser.java:929)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8808)
+	at org.h2.command.Parser.parseCreate(Parser.java:6398)
+	at org.h2.command.Parser.parsePrepared(Parser.java:645)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-27 15:44:17.593150-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "CARGO" no encontrada
+Table "CARGO" not found; SQL statement:
+CREATE TABLE Prueba.EMPLEADO (
+    id INT PRIMARY KEY,
+    salario DOUBLE,
+    cargo_id INT,
+    persona_id INT,
+    FOREIGN KEY (persona_id) REFERENCES Prueba.PERSONA(id) ON DELETE CASCADE,
+    FOREIGN KEY (cargo_id) REFERENCES Prueba.CARGO(id)
+) [42102-232]
+2024-08-27 15:44:32.270186-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PAIS" ya existe
+Table "PAIS" already exists; SQL statement:
+CREATE TABLE Prueba.PAIS(
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255)
+) [42101-232]
+2024-08-27 15:44:32.270186-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "DEPARTAMENTO" ya existe
+Table "DEPARTAMENTO" already exists; SQL statement:
+CREATE TABLE Prueba.DEPARTAMENTO (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255),
+    pais_id INT,
+    CONSTRAINT fk_pais FOREIGN KEY (pais_id) REFERENCES Prueba.PAIS(id) ON DELETE CASCADE
+) [42101-232]
+2024-08-27 15:44:32.271190-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "MUNICIPIO" ya existe
+Table "MUNICIPIO" already exists; SQL statement:
+CREATE TABLE Prueba.MUNICIPIO (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255),
+    departamento_id INT,
+    CONSTRAINT fk_departamento FOREIGN KEY (departamento_id) REFERENCES Prueba.DEPARTAMENTO(id) ON DELETE CASCADE
+) [42101-232]
+2024-08-27 15:44:32.271190-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "DIRECCION" ya existe
+Table "DIRECCION" already exists; SQL statement:
+CREATE TABLE Prueba.DIRECCION (
+    id INT PRIMARY KEY,
+    municipio_id INT,
+    departamento_id INT,
+    pais_id INT,
+    calle VARCHAR(255),
+    carrera VARCHAR(255),
+    coordenada VARCHAR(255),
+    descripcion TEXT,
+    CONSTRAINT fk_municipio_direccion FOREIGN KEY (municipio_id) REFERENCES Prueba.MUNICIPIO(id) ON DELETE CASCADE,
+    CONSTRAINT fk_departamento_direccion FOREIGN KEY (departamento_id) REFERENCES Prueba.DEPARTAMENTO(id) ON DELETE CASCADE,
+    CONSTRAINT fk_pais_direccion FOREIGN KEY (pais_id) REFERENCES Prueba.PAIS(id) ON DELETE CASCADE
+) [42101-232]
+2024-08-27 15:44:32.272190-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PERSONA" ya existe
+Table "PERSONA" already exists; SQL statement:
+CREATE TABLE Prueba.PERSONA (
+    id INT PRIMARY KEY,
+    nombres VARCHAR(255) NOT NULL,
+    apellidos VARCHAR(255) NOT NULL,
+    direccion_id INT,
+    FOREIGN KEY (direccion_id) REFERENCES Prueba.DIRECCION(id) ON DELETE CASCADE
+) [42101-232]
+2024-08-27 15:44:32.274188-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ESTUDIANTE" ya existe
+Table "ESTUDIANTE" already exists; SQL statement:
+CREATE TABLE Prueba.Estudiante (
+    id INT PRIMARY KEY,
+    codigo VARCHAR(20) UNIQUE,
+    programa VARCHAR(100),
+    promedio DOUBLE,
+    persona_id INT,
+    FOREIGN KEY (persona_id) REFERENCES Prueba.PERSONA(id) ON DELETE CASCADE
+) [42101-232]
+2024-08-27 15:44:32.275190-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "CARGO" ya existe
+Table "CARGO" already exists; SQL statement:
+CREATE TABLE Prueba.CARGO (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL  
+) [42101-232]
+2024-08-27 15:44:55.848156-05:00 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/wrydmoon/Documents/NetBeansProjects/ejercicio1/db.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/wrydmoon/Documents/NetBeansProjects/ejercicio1/db.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Conexion.Conexion.conectar(Conexion.java:26)
+	at Repositorios.PaisRepositorio.Buscar(PaisRepositorio.java:73)
+	at com.mycompany.ejercicio1.Ejercicio1.insertar_datos_basededatos(Ejercicio1.java:118)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:145)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/wrydmoon/Documents/NetBeansProjects/ejercicio1/db.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/wrydmoon/Documents/NetBeansProjects/ejercicio1/db.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 21 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/wrydmoon/Documents/NetBeansProjects/ejercicio1/db.mv.db [2.3.232/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 15 more
+2024-08-27 21:09:54.581882-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "CHARACTER VARYING to DECFLOAT"
+Data conversion error converting "CHARACTER VARYING to DECFLOAT"; SQL statement:
+SELECT * FROM Prueba.DEPARTAMENTO WHERE nombre = ? OR id = ? [22018-232]
+2024-08-27 21:10:15.593077-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "CHARACTER VARYING to DECFLOAT"
+Data conversion error converting "CHARACTER VARYING to DECFLOAT"; SQL statement:
+SELECT * FROM Prueba.DEPARTAMENTO WHERE nombre = ? OR id = ? [22018-232]
+2024-08-28 13:44:58.054948-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "CHARACTER VARYING to DECFLOAT"
+Data conversion error converting "CHARACTER VARYING to DECFLOAT"; SQL statement:
+SELECT * FROM Prueba.DEPARTAMENTO WHERE nombre = ? OR id = ? [22018-232]
+2024-08-28 13:44:58.138257-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "CHARACTER VARYING to DECFLOAT"
+Data conversion error converting "CHARACTER VARYING to DECFLOAT"; SQL statement:
+SELECT * FROM Prueba.DEPARTAMENTO WHERE nombre = ? OR id = ? [22018-232]
+2024-08-28 13:44:58.214695-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "CHARACTER VARYING to DECFLOAT"
+Data conversion error converting "CHARACTER VARYING to DECFLOAT"; SQL statement:
+SELECT * FROM Prueba.DEPARTAMENTO WHERE nombre = ? OR id = ? [22018-232]
+2024-08-28 13:49:02.090425-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "CHARACTER VARYING to DECFLOAT"
+Data conversion error converting "CHARACTER VARYING to DECFLOAT"; SQL statement:
+SELECT * FROM Prueba.DEPARTAMENTO WHERE nombre = ? OR id = ? [22018-232]
+2024-08-28 13:49:02.180958-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "CHARACTER VARYING to DECFLOAT"
+Data conversion error converting "CHARACTER VARYING to DECFLOAT"; SQL statement:
+SELECT * FROM Prueba.DEPARTAMENTO WHERE nombre = ? OR id = ? [22018-232]
+2024-08-28 18:55:25.280411-05:00 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Micha/Downloads/trabajo-tecnologias/ejercicio1.1/db.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Micha/Downloads/trabajo-tecnologias/ejercicio1.1/db.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Conexion.Conexion.conectar(Conexion.java:26)
+	at Repositorios.PaisRepositorio.Buscar(PaisRepositorio.java:73)
+	at com.mycompany.ejercicio1.Ejercicio1.insertar_datos_basededatos(Ejercicio1.java:108)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:150)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Micha/Downloads/trabajo-tecnologias/ejercicio1.1/db.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Micha/Downloads/trabajo-tecnologias/ejercicio1.1/db.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 21 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Micha/Downloads/trabajo-tecnologias/ejercicio1.1/db.mv.db [2.3.232/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 15 more
+<<<<<<< HEAD
+2024-09-06 06:22:48.796292-05:00 jdbc[3]: null
+org.h2.message.DbException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-232]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:217)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:134)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:291)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:811)
+	at org.h2.server.web.WebApp.test(WebApp.java:977)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:154)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+2024-09-06 06:23:32.169725-05:00 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/wrydmoon/Downloads/Juan Sebastian - 160004540, Michael Rodriguez - 160004535/Juan Sebastian - 160004540, Michael Rodriguez - 160004535/ejercicio1.1/db.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/wrydmoon/Downloads/Juan Sebastian - 160004540, Michael Rodriguez - 160004535/Juan Sebastian - 160004540, Michael Rodriguez - 160004535/ejercicio1.1/db.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Conexion.Conexion.conectar(Conexion.java:26)
+	at Repositorio.CargoDAO.crear(CargoDAO.java:26)
+	at Controlador.CargoController.agregarCargo(CargoController.java:23)
+	at Vista.VistaCargo.agregarCargo(VistaCargo.java:73)
+	at Vista.VistaCargo.mostrarMenu(VistaCargo.java:42)
+	at com.mycompany.ejercicio1.Ejercicio1.crud_mvc(Ejercicio1.java:127)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:134)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/wrydmoon/Downloads/Juan Sebastian - 160004540, Michael Rodriguez - 160004535/Juan Sebastian - 160004540, Michael Rodriguez - 160004535/ejercicio1.1/db.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/wrydmoon/Downloads/Juan Sebastian - 160004540, Michael Rodriguez - 160004535/Juan Sebastian - 160004540, Michael Rodriguez - 160004535/ejercicio1.1/db.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 24 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/wrydmoon/Downloads/Juan Sebastian - 160004540, Michael Rodriguez - 160004535/Juan Sebastian - 160004540, Michael Rodriguez - 160004535/ejercicio1.1/db.mv.db [2.3.232/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 18 more
+2024-09-06 12:56:53.099022-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "DIRECCION" debido a que "CONSTRAINT_25B" depende de él.
+Cannot drop "DIRECCION" because "CONSTRAINT_25B" depends on it; SQL statement:
+DROP TABLE IF EXISTS Prueba.DIRECCION [90107-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:108)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-09-06 13:01:03.786132-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "CARGO" debido a que "CONSTRAINT_75C" depende de él.
+Cannot drop "CARGO" because "CONSTRAINT_75C" depends on it; SQL statement:
+drop table prueba.cargo [90107-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:108)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-09-06 13:02:02.866681-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE SCHEMA [*]IF EXISTS Prueba"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE SCHEMA [*]IF EXISTS Prueba"; expected "identifier"; SQL statement:
+CREATE SCHEMA IF EXISTS Prueba [42001-232]
+2024-09-06 13:02:02.890183-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE Prueba.DIRECCION (\000d\000a    id INT PRIMARY KEY,\000d\000a    municipio_id INT,\000d\000a    calle VARCHAR(255),\000d\000a    carrera VARCHAR(255),\000d\000a    coordenada VARCHAR(255),\000d\000a    descripcion TEXT,\000d\000a    CONSTRAINT fk_municipio_direccion FOREIGN KEY (municipio_id) REFERENCES Prueba.MUNICIPIO(id) ON DELETE CASCADE,\000d\000a    \000d\000a[*])"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE Prueba.DIRECCION (\000d\000a    id INT PRIMARY KEY,\000d\000a    municipio_id INT,\000d\000a    calle VARCHAR(255),\000d\000a    carrera VARCHAR(255),\000d\000a    coordenada VARCHAR(255),\000d\000a    descripcion TEXT,\000d\000a    CONSTRAINT fk_municipio_direccion FOREIGN KEY (municipio_id) REFERENCES Prueba.MUNICIPIO(id) ON DELETE CASCADE,\000d\000a    \000d\000a[*])"; expected "identifier"; SQL statement:
+CREATE TABLE Prueba.DIRECCION (
+    id INT PRIMARY KEY,
+    municipio_id INT,
+    calle VARCHAR(255),
+    carrera VARCHAR(255),
+    coordenada VARCHAR(255),
+    descripcion TEXT,
+    CONSTRAINT fk_municipio_direccion FOREIGN KEY (municipio_id) REFERENCES Prueba.MUNICIPIO(id) ON DELETE CASCADE,
+    
+) [42001-232]
+2024-09-06 13:02:02.893742-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "DIRECCION" no encontrada
+Table "DIRECCION" not found; SQL statement:
+CREATE TABLE Prueba.PERSONA (
+    id INT PRIMARY KEY,
+    nombres VARCHAR(255) NOT NULL,
+    apellidos VARCHAR(255) NOT NULL,
+    direccion_id INT,
+    FOREIGN KEY (direccion_id) REFERENCES Prueba.DIRECCION(id) ON DELETE CASCADE
+) [42102-232]
+2024-09-06 13:02:02.897817-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PERSONA" no encontrada
+Table "PERSONA" not found; SQL statement:
+CREATE TABLE Prueba.EMPLEADO (
+    id INT PRIMARY KEY,
+    salario DOUBLE,
+    cargo_id INT,
+    persona_id INT,
+    FOREIGN KEY (persona_id) REFERENCES Prueba.PERSONA(id) ON DELETE CASCADE,
+    FOREIGN KEY (cargo_id) REFERENCES Prueba.CARGO(id)
+) [42102-232]
+2024-09-06 13:02:02.900942-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PERSONA" no encontrada
+Table "PERSONA" not found; SQL statement:
+CREATE TABLE Prueba.Estudiante (
+    id INT PRIMARY KEY,
+    codigo VARCHAR(20) UNIQUE,
+    programa VARCHAR(100),
+    promedio DOUBLE,
+    persona_id INT,
+    FOREIGN KEY (persona_id) REFERENCES Prueba.PERSONA(id) ON DELETE CASCADE
+) [42102-232]
+2024-09-06 13:04:05.972717-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE SCHEMA [*]IF EXISTS Prueba"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE SCHEMA [*]IF EXISTS Prueba"; expected "identifier"; SQL statement:
+CREATE SCHEMA IF EXISTS Prueba [42001-232]
+2024-09-06 13:04:05.974718-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PAIS" ya existe
+Table "PAIS" already exists; SQL statement:
+CREATE TABLE Prueba.PAIS(
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255)
+) [42101-232]
+2024-09-06 13:04:05.975718-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "CARGO" ya existe
+Table "CARGO" already exists; SQL statement:
+CREATE TABLE Prueba.CARGO (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL  
+) [42101-232]
+2024-09-06 13:04:05.977717-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "DEPARTAMENTO" ya existe
+Table "DEPARTAMENTO" already exists; SQL statement:
+CREATE TABLE Prueba.DEPARTAMENTO (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255),
+    pais_id INT,
+    CONSTRAINT fk_pais FOREIGN KEY (pais_id) REFERENCES Prueba.PAIS(id) ON DELETE CASCADE
+) [42101-232]
+2024-09-06 13:04:05.979720-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "MUNICIPIO" ya existe
+Table "MUNICIPIO" already exists; SQL statement:
+CREATE TABLE Prueba.MUNICIPIO (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255),
+    departamento_id INT,
+    CONSTRAINT fk_departamento FOREIGN KEY (departamento_id) REFERENCES Prueba.DEPARTAMENTO(id) ON DELETE CASCADE
+) [42101-232]
+2024-09-06 13:14:30.367079-05:00 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ASUS/Downloads/crudmvc/crudmvc/db.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ASUS/Downloads/crudmvc/crudmvc/db.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Conexion.Conexion.conectar(Conexion.java:27)
+	at Repositorio.CargoDAO.crear(CargoDAO.java:28)
+	at Controlador.CargoController.agregarCargo(CargoController.java:23)
+	at Vista.VistaCargo.agregarCargo(VistaCargo.java:75)
+	at Vista.VistaCargo.mostrarMenu(VistaCargo.java:43)
+	at com.mycompany.ejercicio1.Ejercicio1.crud_mvc(Ejercicio1.java:152)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:181)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ASUS/Downloads/crudmvc/crudmvc/db.mv.db [2.3.232/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ASUS/Downloads/crudmvc/crudmvc/db.mv.db [2.3.232/7]" [50000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 24 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/ASUS/Downloads/crudmvc/crudmvc/db.mv.db [2.3.232/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 18 more
+2024-09-06 13:24:36.306175-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "DEPARTAMENTO_ID" no encontrada
+Column "DEPARTAMENTO_ID" not found; SQL statement:
+INSERT INTO Prueba.DIRECCION (id, municipio_id, departamento_id, pais_id, calle, carrera, coordenada, descripcion) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:786)
+	at org.h2.command.Parser.parseColumn(Parser.java:1171)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1156)
+	at org.h2.command.Parser.parseInsert(Parser.java:1530)
+	at org.h2.command.Parser.parsePrepared(Parser.java:698)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorio.DireccionDAO.crear(DireccionDAO.java:39)
+	at Controlador.DireccionController.agregar(DireccionController.java:23)
+	at Vista.VistaDireccion.agregarDireccion(VistaDireccion.java:92)
+	at Vista.VistaDireccion.mostrarMenu(VistaDireccion.java:50)
+	at com.mycompany.ejercicio1.Ejercicio1.crud_mvc(Ejercicio1.java:164)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:181)
+2024-09-06 13:26:30.388394-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor Invalido "7" para el parametro "parameterIndex"
+Invalid value "7" for parameter "parameterIndex" [90008-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1396)
+	at org.h2.jdbc.JdbcPreparedStatement.setString(JdbcPreparedStatement.java:388)
+	at Repositorio.DireccionDAO.crear(DireccionDAO.java:45)
+	at Controlador.DireccionController.agregar(DireccionController.java:23)
+	at Vista.VistaDireccion.agregarDireccion(VistaDireccion.java:92)
+	at Vista.VistaDireccion.mostrarMenu(VistaDireccion.java:50)
+	at com.mycompany.ejercicio1.Ejercicio1.crud_mvc(Ejercicio1.java:164)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:181)
+2024-09-06 13:29:08.980279-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "D.DEPARTAMENTO_ID" no encontrada
+Column "D.DEPARTAMENTO_ID" not found; SQL statement:
+SELECT d.id AS direccion_id, d.calle, d.carrera, d.coordenada, d.descripcion, m.id AS municipio_id, m.nombre AS municipio_nombre, dp.id AS departamento_id, dp.nombre AS departamento_nombre, p.id AS pais_id, p.nombre AS pais_nombre FROM Prueba.DIRECCION d JOIN Prueba.MUNICIPIO m ON d.municipio_id = m.id JOIN Prueba.DEPARTAMENTO dp ON d.departamento_id = dp.id JOIN Prueba.PAIS p ON dp.pais_id = p.id [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:147)
+	at org.h2.expression.condition.ConditionAndOr.optimize(ConditionAndOr.java:136)
+	at org.h2.expression.condition.ConditionAndOr.optimize(ConditionAndOr.java:137)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1235)
+	at org.h2.command.query.Query.prepare(Query.java:232)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorio.DireccionDAO.listar(DireccionDAO.java:137)
+	at Controlador.DireccionController.listar(DireccionController.java:39)
+	at Vista.VistaDireccion.listarDirecciones(VistaDireccion.java:137)
+	at Vista.VistaDireccion.mostrarMenu(VistaDireccion.java:62)
+	at com.mycompany.ejercicio1.Ejercicio1.crud_mvc(Ejercicio1.java:164)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:181)
+2024-09-06 13:30:18.433476-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "D.DEPARTAMENTO_ID" no encontrada
+Column "D.DEPARTAMENTO_ID" not found; SQL statement:
+SELECT d.id AS direccion_id, d.calle, d.carrera, d.coordenada, d.descripcion, m.id AS municipio_id, m.nombre AS municipio_nombre, dp.id AS departamento_id, dp.nombre AS departamento_nombre, p.id AS pais_id, p.nombre AS pais_nombre FROM Prueba.DIRECCION d JOIN Prueba.MUNICIPIO m ON d.municipio_id = m.id JOIN Prueba.DEPARTAMENTO dp ON d.departamento_id = dp.id JOIN Prueba.PAIS p ON dp.pais_id = p.id [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:147)
+	at org.h2.expression.condition.ConditionAndOr.optimize(ConditionAndOr.java:136)
+	at org.h2.expression.condition.ConditionAndOr.optimize(ConditionAndOr.java:137)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1235)
+	at org.h2.command.query.Query.prepare(Query.java:232)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at Repositorio.DireccionDAO.listar(DireccionDAO.java:137)
+	at Controlador.DireccionController.listar(DireccionController.java:39)
+	at Vista.VistaDireccion.listarDirecciones(VistaDireccion.java:137)
+	at Vista.VistaDireccion.mostrarMenu(VistaDireccion.java:62)
+	at com.mycompany.ejercicio1.Ejercicio1.crud_mvc(Ejercicio1.java:164)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:181)
+2024-09-07 00:06:20.297279-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "estudiante_id" no encontrada
+Column "estudiante_id" not found [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at Repositorio.EstudianteDAO.listar(EstudianteDAO.java:111)
+	at Controlador.EstudianteController.listar(EstudianteController.java:39)
+	at Vista.VistaEstudiante.listarEstudiantes(VistaEstudiante.java:147)
+	at Vista.VistaEstudiante.mostrarMenu(VistaEstudiante.java:60)
+	at com.mycompany.ejercicio1.Ejercicio1.crud_mvc(Ejercicio1.java:182)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:199)
+2024-09-07 00:06:24.815180-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "estudiante_id" no encontrada
+Column "estudiante_id" not found [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at Repositorio.EstudianteDAO.listar(EstudianteDAO.java:111)
+	at Controlador.EstudianteController.listar(EstudianteController.java:39)
+	at Vista.VistaEstudiante.listarEstudiantes(VistaEstudiante.java:147)
+	at Vista.VistaEstudiante.mostrarMenu(VistaEstudiante.java:60)
+	at com.mycompany.ejercicio1.Ejercicio1.crud_mvc(Ejercicio1.java:182)
+	at com.mycompany.ejercicio1.Ejercicio1.main(Ejercicio1.java:199)
+=======
+>>>>>>> 357535d36ce343a56db00b2dd97f386fc34ef13e
