@@ -4,7 +4,7 @@
  */
 package VistaGrafica;
 
-import Controlador.CargoController;
+
 import Controlador.PaisController;
 import Ubicacion.Pais;
 import java.util.List;
